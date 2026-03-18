@@ -33,7 +33,6 @@ class GeminiLiveClient:
                     "parts": [{"text": sys_instruction}]
                 },
                 "generationConfig": {
-                    # 【修复点 1】: 添加 "TEXT" 模态，否则 AI 不会返回文本，只有声音
                     "responseModalities": ["AUDIO"],
                     "speechConfig": {
                         "voiceConfig": {
